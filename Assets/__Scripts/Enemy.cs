@@ -72,7 +72,8 @@
                      if (!calledShipDestroyed){
                          calledShipDestroyed = true;
                          Main.SHIP_DESTROYED( this );
-                     }                                        // d
+                     } 
+                     Main.KILLS++; // Increment the kill count in Main
                      // Destroy this Enemy
                      Destroy( this.gameObject );
                  }

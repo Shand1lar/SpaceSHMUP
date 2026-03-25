@@ -18,6 +18,10 @@
                                      eWeaponType.blaster, eWeaponType.blaster,
                                      eWeaponType.spread,  eWeaponType.shield };
      private BoundsCheck  bndCheck;
+
+     static public int KILLS;
+     [Header("UI Fields")]
+     public UnityEngine.UI.Text killsText;
  
      void Awake() {
          S = this;
@@ -111,5 +115,13 @@
              pUp.transform.position = e.transform.position;
          }
      }
+
+     void Update()
+    {
+        if (killsText != null)
+        {
+            killsText.text = "Kills: " + KILLS;
+        }
+    }
 }
 
