@@ -116,6 +116,7 @@
                         fixedPos.z = 0;
                         expo.transform.position = fixedPos;
                     }
+                Main.KILLS++; // Increment the kill count in Main
                  // Destroy this Enemy_4
                  Destroy( gameObject );
              }
